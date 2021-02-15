@@ -1,0 +1,88 @@
+@import "../../../styles.scss";
+
+.cart {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+
+  @include mobile() {
+    width: 100%;
+  }
+
+  .product {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 2px solid purple;
+    padding: 20px;
+    width: 100%;
+
+    .product__left {
+      width: 50%;
+      @include mobile() {
+        width: 100%;
+      }
+      .product-image {
+        text-align: center;
+        img {
+          width: 30%;
+        }
+      }
+      .offer-text {
+        font-size: 25px;
+      }
+    }
+
+    .product__right {
+      h2 {
+        margin: 0px;
+      }
+      width: 50%;
+
+      .btn {
+        margin-top: 20px;
+        button {
+          background-color: green;
+          color: black;
+          padding: 10px;
+          font-size: 20px;
+        }
+        .add-cart-btn {
+          border-radius: 12px;
+          margin-right: 40px;
+        }
+        .round-btn {
+          border-radius: 50%;
+        }
+      }
+    }
+
+  }
+}
+
+.checkout {
+  display: flex;
+  background-color: palevioletred;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-between;
+
+  left: 381px;
+  top: 520px;
+  position: fixed;
+  z-index: 1000;
+
+  @include mobile() {
+    width: 100%;
+  }
+
+  .checkout-btn {
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+    font-weight: 600;
+    background-color: greenyellow;
+  }
+}
+
+

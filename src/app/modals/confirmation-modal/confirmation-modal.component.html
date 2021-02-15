@@ -1,0 +1,12 @@
+<!-- The Modal -->
+<div id="myModal" class="modal" *ngIf="showConfirmationModal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="onClickClose()">&times;</span>
+    <p *ngIf="totatCost !== 0" class="color-green">Your transaction is Successful</p>
+    <p *ngIf="totatCost === 0" class="color-red">Your cart is empty</p>
+    <p>Total Cost is:  <strong>{{ totatCost }}</strong></p>
+  </div>
+
+</div>
